@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#nprogress .bar {
+  @apply bg-emerald-700;
+}
+
+#nprogress .spinner-icon {
+  @apply border-t-emerald-700 border-l-emerald-700;
+}
+
+.useroption-label:hover {
+  @apply bg-slate-400 cursor-pointer transition-colors duration-300;
+}
+
+.useroption-radio:checked + .useroption-label {
+  @apply bg-slate-400 transition-colors duration-300;
+}
+
+.useroption-radio:disabled + .useroption-label {
+  @apply bg-gray-100 cursor-not-allowed;
+}
+
+.option-free-a-layout {
+  @apply lg:grid grid-cols-2 gap-x-8 h-full lg:mb-8;
+}
+
+.option-free-b-layout {
+  @apply flex flex-col lg:gap-y-12;
+}
+
+.option-pro-layout,
+.option-free-c-layout {
+  @apply lg:grid grid-cols-2 gap-x-8 h-full lg:mb-8;
+}
+.option-pro-layout .form-showchart,
+.option-free-c-layout .form-showchart {
+  @apply flex-wrap gap-x-4;
+}
+.option-pro-layout .card-showchart,
+.option-free-c-layout .card-showchart {
+  @apply basis-full;
+}
+
+.option-pro-layout .btn-showchart,
+.option-free-c-layout .btn-showchart {
+  @apply h-full;
+}
